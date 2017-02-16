@@ -28,6 +28,9 @@ export default {
 </script>
 
 <style>
+#app {
+  text-align: center;
+}
 body {
     background: url(/static/images/birds.png);
     background-repeat: repeat;
@@ -35,4 +38,15 @@ body {
     background-position: center;
     background-size: cover;
     }
+
+@media screen and (max-width: 1100px) {
+  
+#app {
+  text-align: center;
+}
+
+body {
+  text-align: center;
+}
+}
 </style>

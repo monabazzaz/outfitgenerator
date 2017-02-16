@@ -23,7 +23,7 @@ h1 {
   font-family: 'Londrina Outline', cursive;
   text-align: center;
   color: #647ea8;
-  font-size: 3em;
+  font-size: 4em;
 }
 
 h2 {
