@@ -23,7 +23,8 @@
         <div class="col-lg-3 col-md-6 col-sm-12 combined">
           <h2> {{ mdg }} </h2>
           <div class="combinedOutfit">
-            <img :src="currentOutfit" v-if="shoe && bottom && top">
+            <img v-if="top && bottom && shoe" :src="this.outfits[this.bottom.key][this.shoe.key][this.top.key]">
+            <!-- <button class="Reset" @click="reset">Start Over!</button> -->
           </div>
         </div>
       </div>
@@ -63,6 +64,11 @@ export default {
     currentOutfit () {
       this.outfits[this.bottom.key][this.shoe.key][this.top.key]
     }
+    // reset () {
+    //   this.bottom.key = null
+    //   this.shoe.key = null
+    //   this.top.key = null
+    // }
   }
 }
 

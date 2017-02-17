@@ -13,7 +13,6 @@
           </div>
         </div>
         <div class="col-lg-3">
-          <button @click=" ">Start Over!</button>
         </div>
       </div>
     </div>
