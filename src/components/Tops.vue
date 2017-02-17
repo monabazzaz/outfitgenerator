@@ -4,20 +4,8 @@
       <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-12 upper">
           <h2> {{ msg }} </h2>
-          <div class="box">
-            <img :src="imgSrc">
-          </div>
-          <div class="box">
-            <img :src="iSrc">
-          </div>
-          <div class="box">
-            <img :src="imSrc">
-          </div>
-          <div class="box">
-            <img :src="imSr">
-          </div>
-          <div class="box">
-            <img :src="imageSrc">
+          <div class="box" v-for="top in tops">
+            <a href="#"><img :src="top.img" @click="selectedTop(top)"></a>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12">
@@ -36,12 +24,40 @@ export default {
   name: 'tops',
   data () {
     return {
-      msg: 'Start: Pick a top!',
-      imgSrc: '/static/images/T1.JPG',
-      iSrc: '/static/images/T2.JPG',
-      imSrc: '/static/images/T3.JPG',
-      imSr: '/static/images/T4.JPG',
-      imageSrc: '/static/images/T5.JPG'
+      tops: [
+        {
+          title: 'Top 1',
+          key: 'adidas',
+          img: '/static/images/T1.jpg'
+        },
+        {
+          title: 'Top 2',
+          key: 'hm',
+          img: '/static/images/T2.jpg'
+        },
+        {
+          title: 'Top 3',
+          key: 'zara',
+          img: '/static/images/T3.jpg'
+        },
+        {
+          title: 'Top 4',
+          key: 'dakota',
+          img: '/static/images/T4.jpg'
+        },
+        {
+          title: 'Top 5',
+          key: 'brandy',
+          img: '/static/images/T5.jpg'
+        }
+      ],
+      msg: 'Start: Select a top!'
+    }
+  },
+  methods: {
+    selectedTop: function (top) {
+      console.log(top)
+      this.$emit('selected', top)
     }
   }
 }

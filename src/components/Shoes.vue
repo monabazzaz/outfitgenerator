@@ -8,23 +8,12 @@
         </div>
         <div class="col-lg-3 feet">
           <h2> {{ msg }} </h2>
-          <div class="box">
-            <img :src="imgSrc">
-          </div>
-          <div class="box">
-            <img :src="iSrc">
-          </div>
-          <div class="box">
-            <img :src="imSrc">
-          </div>
-          <div class="box">
-            <img :src="imSr">
-          </div>
-          <div class="box">
-            <img :src="imageSrc">
+          <div class="box" v-for="shoe in shoes">
+            <a href="#"><img :src="shoe.img" @click="selectedShoe(shoe)"></a>
           </div>
         </div>
         <div class="col-lg-3">
+          <button @click=" ">Start Over!</button>
         </div>
       </div>
     </div>
@@ -36,12 +25,40 @@ export default {
   name: 'shoes',
   data () {
     return {
-      msg: 'Pick some shoes!',
-      imgSrc: '/static/images/S1.JPG',
-      iSrc: '/static/images/S2.JPG',
-      imSrc: '/static/images/S3.JPG',
-      imSr: '/static/images/S4.JPG',
-      imageSrc: '/static/images/S5.JPG'
+      shoes: [
+        {
+          title: 'Shoe 1',
+          key: 'birks',
+          img: '/static/images/S1.jpg'
+        },
+        {
+          title: 'Shoe 2',
+          key: 'sneaks',
+          img: '/static/images/S2.jpg'
+        },
+        {
+          title: 'Shoe 3',
+          key: 'booties',
+          img: '/static/images/S3.jpg'
+        },
+        {
+          title: 'Shoe 4',
+          key: 'docs',
+          img: '/static/images/S4.jpg'
+        },
+        {
+          title: 'Shoe 5',
+          key: 'hunter',
+          img: '/static/images/S5.jpg'
+        }
+      ],
+      msg: 'Choose some shoes!'
+    }
+  },
+  methods: {
+    selectedShoe: function (shoe) {
+      console.log(shoe)
+      this.$emit('selected', shoe)
     }
   }
 }
@@ -90,6 +107,10 @@ img:hover {
   -moz-transition: opacity .55s ease-in-out;
   -webkit-transition: opacity .55s ease-in-out;
 }​
+
+button {
+  margin-top: 40px;
+}
 
 @media screen and (max-width: 1100px) {
 

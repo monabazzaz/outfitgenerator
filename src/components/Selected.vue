@@ -4,19 +4,27 @@
       <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-12 upper">
           <h2> {{ msg }} </h2>
-          <div class="box1"></div>
+          <div class="selectedTop">
+            <img :src="top.img" v-if="top">
+          </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12 lower">
           <h2> {{ mng }} </h2>
-          <div class="box"></div>
+          <div class="selectedBottom">
+            <img :src="bottom.img" v-if="bottom">
+          </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12 feet">
           <h2> {{ mpg }} </h2>
-          <div class="box"></div>
+          <div class="selectedShoe">
+            <img :src="shoe.img" v-if="shoe">
+          </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12 combined">
           <h2> {{ mdg }} </h2>
-          <div class="box4"></div>
+          <div class="combinedOutfit">
+            <img :src="currentOutfit" v-if="shoe && bottom && top">
+          </div>
         </div>
       </div>
     </div>
@@ -24,7 +32,24 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
+
+  mounted () {
+    console.log('Top Mounted')
+    axios.get('/static/clothes.json')
+      .then((response) => {
+        console.log(response)
+        this.outfits = response.data
+      })
+  },
+  props: [
+    'top',
+    'bottom',
+    'shoe'
+  ],
+
   name: 'selected',
   data () {
     return {
@@ -33,8 +58,14 @@ export default {
       mpg: 'SELECTED SHOES',
       mdg: 'COMPLETE OUTFIT'
     }
+  },
+  computed: {
+    currentOutfit () {
+      this.outfits[this.bottom.key][this.shoe.key][this.top.key]
+    }
   }
 }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -53,7 +84,7 @@ h2 {
   padding-left: 40px;
 }
 
-.box {
+.selectedTop {
   flex-basis: 30%;
   height: 250px;
   width: 250px;
@@ -62,7 +93,7 @@ h2 {
   overflow: hidden;
 }
 
-.box1 {
+.selectedBottom {
   flex-basis: 30%;
   height: 250px;
   width: 250px;
@@ -71,7 +102,16 @@ h2 {
   overflow: hidden;
 }
 
-.box4 {
+.selectedShoe {
+  flex-basis: 30%;
+  height: 250px;
+  width: 250px;
+  border: 1px solid #647ea8;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.combinedOutfit {
   flex-basis: 30%;
   height: 250px;
   width: 250px;

@@ -6,20 +6,8 @@
         </div>
         <div class="col-lg-3 lower">
           <h2> {{ msg }} </h2>
-          <div class="box">
-            <img :src="imgSrc">
-          </div>
-          <div class="box">
-            <img :src="iSrc">
-          </div>
-          <div class="box">
-            <img :src="imSrc">
-          </div>
-          <div class="box">
-            <img :src="imSr">
-          </div>
-          <div class="box">
-            <img :src="imageSrc">
+          <div class="box" v-for="bottom in bottoms">
+            <a href="#"><img :src="bottom.img" @click="selectedBottom(bottom)"></a>
           </div>
         </div>
         <div class="col-lg-3">
@@ -36,12 +24,40 @@ export default {
   name: 'bottoms',
   data () {
     return {
-      msg: 'Pick some bottoms!',
-      imgSrc: '/static/images/B1.JPG',
-      iSrc: '/static/images/B2.JPG',
-      imSrc: '/static/images/B3.JPG',
-      imSr: '/static/images/B4.JPG',
-      imageSrc: '/static/images/B5.JPG'
+      bottoms: [
+        {
+          title: 'Bottom 1',
+          key: 'skirt',
+          img: '/static/images/B1.jpg'
+        },
+        {
+          title: 'Bottom 2',
+          key: 'shorts',
+          img: '/static/images/B2.jpg'
+        },
+        {
+          title: 'Bottom 3',
+          key: 'leggings',
+          img: '/static/images/B3.jpg'
+        },
+        {
+          title: 'Bottom 4',
+          key: 'jorts',
+          img: '/static/images/B4.jpg'
+        },
+        {
+          title: 'Bottom 5',
+          key: 'jeans',
+          img: '/static/images/B5.jpg'
+        }
+      ],
+      msg: 'Pick some bottoms!'
+    }
+  },
+  methods: {
+    selectedBottom: function (bottom) {
+      console.log(bottom)
+      this.$emit('selected', bottom)
     }
   }
 }

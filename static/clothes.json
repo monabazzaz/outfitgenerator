@@ -1,0 +1,236 @@
+{
+  "outfits": {
+    "shoes":{
+      "birks": {
+        "adidas": {
+          "skirt":"/static/images/S1T1B1.JPG",
+          "shorts":"/static/images/S1T1B2.JPG",
+          "leggings":"/static/images/S1T1B3.JPG",
+          "jorts":"/static/images/S1T1B4.JPG",
+          "jeans":"/static/images/S1T1B5.JPG"
+        }
+    },
+      "birks": {
+        "hm": {
+          "skirt":"/static/images/S1T2B1.JPG",
+          "shorts":"/static/images/S1T2B2.JPG",
+          "leggings":"/static/images/S1T2B3.JPG",
+          "jorts":"/static/images/S1T2B4.JPG",
+          "jeans":"/static/images/S1T2B5.JPG"
+        }
+    },
+      "birks": {
+        "zara": {
+          "skirt":"/static/images/S1T3B1.JPG",
+          "shorts":"/static/images/S1T3B2.JPG",
+          "leggings":"/static/images/S3T2B3.JPG",
+          "jorts":"/static/images/S1T3B4.JPG",
+          "jeans":"/static/images/S1T3B5.JPG"
+      }
+    },
+      "birks": {
+        "dakota": {
+          "skirt":"/static/images/S1T4B1.JPG",
+          "shorts":"/static/images/S1T4B2.JPG",
+          "leggings":"/static/images/S1T4B3.JPG",
+          "jorts":"/static/images/S1T4B4.JPG",
+          "jeans":"/static/images/S1T4B5.JPG"
+        }
+      },
+      "birks": {
+        "brandy": {
+          "skirt":"/static/images/S1T5B1.JPG",
+          "shorts":"/static/images/S1T5B2.JPG",
+          "leggings":"/static/images/S1T5B3.JPG",
+          "jorts":"/static/images/S1T5B4.JPG",
+          "jeans":"/static/images/S1T5B5.JPG"
+        }
+      },
+      "sneaks": {
+        "adidas": {
+          "skirt":"/static/images/S2T1B1.JPG",
+          "shorts":"/static/images/S2T1B2.JPG",
+          "leggings":"/static/images/S2T1B3.JPG",
+          "jorts":"/static/images/S2T1B4.JPG",
+          "jeans":"/static/images/S2T1B5.JPG"
+        }
+      }},
+      "shoes":{
+      "sneaks": {
+        "hm": {
+          "skirt":"/static/images/S2T2B1.JPG",
+          "shorts":"/static/images/S2T2B2.JPG",
+          "leggings":"/static/images/S2T2B3.JPG",
+          "jorts":"/static/images/S2T2B4.JPG",
+          "jeans":"/static/images/S2T2B5.JPG"
+        }
+      },
+
+      "sneaks": {
+        "zara": {
+          "skirt":"/static/images/S2T3B1.JPG",
+          "shorts":"/static/images/S2T3B2.JPG",
+          "leggings":"/static/images/S2T2B3.JPG",
+          "jorts":"/static/images/S2T3B4.JPG",
+          "jeans":"/static/images/S2T3B5.JPG"
+        }
+      },
+      "sneaks": {
+        "dakota": {
+          "skirt":"/static/images/S2T4B1.JPG",
+          "shorts":"/static/images/S2T4B2.JPG",
+          "leggings":"/static/images/S2T4B3.JPG",
+          "jorts":"/static/images/S2T4B4.JPG",
+          "jeans":"/static/images/S2T4B5.JPG"
+        }
+      },
+      "sneaks": {
+        "brandy": {
+          "skirt":"/static/images/S2T5B1.JPG",
+          "shorts":"/static/images/S2T5B2.JPG",
+          "leggings":"/static/images/S2T5B3.JPG",
+          "jorts":"/static/images/S2T5B4.JPG",
+          "jeans":"/static/images/S2T5B5.JPG"
+        }
+      }},
+      "shoes":{
+      "booties": {
+        "adidas": {
+          "skirt":"/static/images/S3T1B1.JPG",
+          "shorts":"/static/images/S3T1B2.JPG",
+          "leggings":"/static/images/S3T1B3.JPG",
+          "jorts":"/static/images/S3T1B4.JPG",
+          "jeans":"/static/images/S3T1B5.JPG"
+        }
+      },
+      "booties": {
+        "hm": {
+          "skirt":"/static/images/S3T2B1.JPG",
+          "shorts":"/static/images/S3T2B2.JPG",
+          "leggings":"/static/images/S3T2B3.JPG",
+          "jorts":"/static/images/S3T2B4.JPG",
+          "jeans":"/static/images/S3T2B5.JPG"
+        }
+      },
+      "booties": {
+        "zara": {
+          "skirt":"/static/images/S3T3B1.JPG",
+          "shorts":"/static/images/S3T3B2.JPG",
+          "leggings":"/static/images/S3T2B3.JPG",
+          "jorts":"/static/images/S3T3B4.JPG",
+          "jeans":"/static/images/S3T3B5.JPG"
+        }
+      },
+      "booties": {
+        "dakota": {
+          "skirt":"/static/images/S3T4B1.JPG",
+          "shorts":"/static/images/S3T4B2.JPG",
+          "leggings":"/static/images/S3T4B3.JPG",
+          "jorts":"/static/images/S3T4B4.JPG",
+          "jeans":"/static/images/S3T4B5.JPG"
+        }
+      },
+      "booties": {
+        "brandy": {
+          "skirt":"/static/images/S3T5B1.JPG",
+          "shorts":"/static/images/S3T5B2.JPG",
+          "leggings":"/static/images/S3T5B3.JPG",
+          "jorts":"/static/images/S3T5B4.JPG",
+          "jeans":"/static/images/S3T5B5.JPG"
+        }
+      }},
+      "shoes":{
+      "docs": {
+        "adidas": {
+          "skirt":"/static/images/S4T1B1.JPG",
+          "shorts":"/static/images/S4T1B2.JPG",
+          "leggings":"/static/images/S4T1B3.JPG",
+          "jorts":"/static/images/S4T1B4.JPG",
+          "jeans":"/static/images/S4T1B5.JPG"
+        }
+      },
+      "docs": {
+        "hm": {
+          "skirt":"/static/images/S4T2B1.JPG",
+          "shorts":"/static/images/S4T2B2.JPG",
+          "leggings":"/static/images/S4T2B3.JPG",
+          "jorts":"/static/images/S4T2B4.JPG",
+          "jeans":"/static/images/S4T2B5.JPG"
+        }
+      },
+      "docs": {
+        "zara": {
+          "skirt":"/static/images/S4T3B1.JPG",
+          "shorts":"/static/images/S4T3B2.JPG",
+          "leggings":"/static/images/S4T2B3.JPG",
+          "jorts":"/static/images/S4T3B4.JPG",
+          "jeans":"/static/images/S4T3B5.JPG"
+        }
+      },
+      "docs": {
+        "dakota": {
+          "skirt":"/static/images/S4T4B1.JPG",
+          "shorts":"/static/images/S4T4B2.JPG",
+          "leggings":"/static/images/S4T4B3.JPG",
+          "jorts":"/static/images/S4T4B4.JPG",
+          "jeans":"/static/images/S4T4B5.JPG"
+        }
+      },
+      "docs": {
+        "brandy": {
+          "skirt":"/static/images/S4T5B1.JPG",
+          "shorts":"/static/images/S4T5B2.JPG",
+          "leggings":"/static/images/S4T5B3.JPG",
+          "jorts":"/static/images/S4T5B4.JPG",
+          "jeans":"/static/images/S4T5B5.JPG"
+        }
+      }},
+      "shoes":{
+      "hunter": {
+        "adidas": {
+          "skirt":"/static/images/S5T1B1.JPG",
+          "shorts":"/static/images/S5T1B2.JPG",
+          "leggings":"/static/images/S5T1B3.JPG",
+          "jorts":"/static/images/S5T1B4.JPG",
+          "jeans":"/static/images/S5T1B5.JPG"
+        }
+      },
+      "hunter": {
+        "hm": {
+          "skirt":"/static/images/S5T2B1.JPG",
+          "shorts":"/static/images/S5T2B2.JPG",
+          "leggings":"/static/images/S5T2B3.JPG",
+          "jorts":"/static/images/S5T2B4.JPG",
+          "jeans":"/static/images/S5T2B5.JPG"
+        }
+      },
+      "hunter": {
+        "zara": {
+          "skirt":"/static/images/S5T3B1.JPG",
+          "shorts":"/static/images/S5T3B2.JPG",
+          "leggings":"/static/images/S5T2B3.JPG",
+          "jorts":"/static/images/S5T3B4.JPG",
+          "jeans":"/static/images/S5T3B5.JPG"
+        }
+      },
+      "hunter": {
+        "dakota": {
+          "skirt":"/static/images/S5T4B1.JPG",
+          "shorts":"/static/images/S5T4B2.JPG",
+          "leggings":"/static/images/S5T4B3.JPG",
+          "jorts":"/static/images/S5T4B4.JPG",
+          "jeans":"/static/images/S5T4B5.JPG"
+        }
+      },
+      "hunter": {
+        "brandy": {
+          "skirt":"/static/images/S5T5B1.JPG",
+          "shorts":"/static/images/S5T5B2.JPG",
+          "leggings":"/static/images/S5T5B3.JPG",
+          "jorts":"/static/images/S5T5B4.JPG",
+          "jeans":"/static/images/S5T5B5.JPG"
+        }
+      }
+    }
+  }
+}

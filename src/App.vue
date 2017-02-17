@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <hello></hello>
-    <selected></selected>
-    <tops></tops>
-    <bottoms></bottoms>
-    <shoes></shoes>
+    <selected :top="currentTop" :bottom="currentBottom" :shoe="currentShoe"></selected>
+    <tops @selected="onSelectedTop"></tops>
+    <bottoms @selected="onSelectedBottom"></bottoms>
+    <shoes @selected="onSelectedShoe"></shoes>
   </div>
 </template>
 
@@ -23,6 +23,27 @@ export default {
     Tops,
     Bottoms,
     Shoes
+  },
+  data () {
+    return {
+      currentTop: null,
+      currentBottom: null,
+      currentShoe: null
+    }
+  },
+  methods: {
+    onSelectedTop (top) {
+      console.log('App -> onSelectedTop')
+      this.currentTop = top
+    },
+    onSelectedBottom (bottom) {
+      console.log('App -> onSelectedBottom')
+      this.currentBottom = bottom
+    },
+    onSelectedShoe (shoe) {
+      console.log('App -> onSelectedShoe')
+      this.currentShoe = shoe
+    }
   }
 }
 </script>
@@ -40,7 +61,7 @@ body {
     }
 
 @media screen and (max-width: 1100px) {
-  
+
 #app {
   text-align: center;
 }
