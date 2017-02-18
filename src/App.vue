@@ -5,6 +5,7 @@
     <tops @selected="onSelectedTop"></tops>
     <bottoms @selected="onSelectedBottom"></bottoms>
     <shoes @selected="onSelectedShoe"></shoes>
+    <footer></footer>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Selected from './components/Selected'
 import Tops from './components/Tops'
 import Bottoms from './components/Bottoms'
 import Shoes from './components/Shoes'
+import Footer from './components/Footer'
 
 export default {
   name: 'app',
@@ -22,7 +24,8 @@ export default {
     Selected,
     Tops,
     Bottoms,
-    Shoes
+    Shoes,
+    Footer
   },
   data () {
     return {
